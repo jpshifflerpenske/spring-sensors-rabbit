@@ -4,10 +4,11 @@ metadata:
   name: spring-sensors
   labels:
     apps.tanzu.vmware.com/workload-type: web
+    app.kubernetes.io/part-of: spring-sensors-rabbit
 spec:
   source:
     git:
-      url: https://github.com/sample-accelerators/spring-sensors-rabbit.git
+      url: https://github.com/jpshifflerpenske/spring-sensors-rabbit.git
       ref:
         branch: main
   serviceClaims:
